@@ -1,0 +1,158 @@
+@charset "utf-8";
+#content{
+	margin: 0 auto;
+	width: 1200px;
+	min-width: 1200px;
+	max-width: 1200px;
+}
+.aim{
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#left{
+	float: left;
+	width: 345px;
+	height: 500px;
+	background-color:#fff;
+	padding: 30px;
+	border: 1px solid #ddd;
+}
+#right{
+	float: left;
+	width: 760px;
+	height: 560px;
+	margin-left: 30px;
+}
+#allmap{
+	 	height: 400px;
+	 	width:700px;
+	 	margin-bottom: 1%;
+	 	}
+._fuwu{
+	margin-bottom: 35px;
+}
+._fuwu a{
+	text-decoration: none;
+	font-size: 18px;
+	border: 1px solid #ddd;
+	line-height: 42px;
+	width:140px;
+	text-align: center;
+	display: block;
+	margin-left: 30px;
+	
+}
+.y{
+	float: left;
+}
+.w{
+	float: left;
+}
+._fuwu a:hover{
+	background-color: red;
+}
+.wufur_radio{
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+.wufur_radio span{
+	margin-right: 30px;
+}
+.fix:after{
+	display: block;
+            	content: "";
+            	clear: both;
+            	height: 0;
+            	line-height: 0;
+            	visibility: hidden;
+}
+.fuwur_select,.local{
+	margin-left: 20px;
+	margin-top: 20px;
+	
+}
+.fw_cityse,.fw_prise{
+	width: 140px;
+	height: 30px;
+}
+.city{
+	float: left;
+}
+.serve{
+	float: right;
+}
+.tab-service{
+	background-color: #fff;
+	margin-top: 15px;
+	height: 330px;
+	overflow-y: scroll;
+}
+.tab-service li{
+	width: 287px;
+	height: 178px;
+	border: 1px solid #ddd;
+	margin-bottom: -1px;
+	padding:15px 20px 0;	
+	line-height: 28px;
+	color: #555;
+	border-left: none;
+	position: relative;
+}
+.tab-service li .title{
+	font-size:17px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	
+}
+.tab-service li .title a{
+	color: #ff9900;
+	text-decoration: none;
+}
+.tab-service li .title a:hover{
+	color: #e70014;
+}
+.tab-service li .address{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/*.side-product{
+	float: left;
+}*/
+.side-product ul{
+	width: 213px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color:white;
+	position: absolute;
+	top: 178px;
+	left: 75px;
+}
+.side-product ul li{
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+}
+.side-product ul li a{
+	text-decoration: none;
+	display: block;
+	line-height: 49px;
+	padding-left: 30px;
+	border-left: 2px solid #fff;
+	background-image: url(../images/nav-jt.png);
+	background-repeat: no-repeat;
+	background-position: right 9px;
+	transition: all 0.3s ease;
+}
+.side-product ul li a:hover{
+	background-position: right -49px;
+	border-left: 2px solid #e70014;
+	color: #e70014;
+}
+.right_nav{
+	float: left;
+}

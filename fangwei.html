@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>配件防伪</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/fangwei.css">
+	<script> 
+          function ddd(obj, sType) { 
+              var oDiv = document.getElementById(obj); 
+              if (sType == 'show') { oDiv.style.display = 'block';} 
+                  if (sType == 'hide') { oDiv.style.display = 'none';} 
+
+            } 
+        </script>
+</head>
+<body>
+<header id="header">
+		<div class="top-bar">
+			<div class="wrap-center">
+				<div class="top-welcome">
+					您好，欢迎来到智慧重汽！
+					<a href="##" class="top-login-link">[登录]</a>
+					<a href="##" class="top-reg-link">注册</a>
+				</div>
+				<div class="top-user-nav">
+					<ul>
+						<li><a href="#">
+							智慧重汽首页
+							</a>
+						</li>
+						<li class="nav-split">|</li>
+						<li><a href="#">我的订单</a></li>
+						<li class="nav-split">|</li>
+						<li><a href="#">我的车辆</a></li>
+						<li class="nav-split">|</li>
+						<li><a href="#">我的收藏</a></li>
+						<li class="nav-split">|</li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- logo+search -->
+		<div class="m-bar">
+			<div class="wrap-center m-bar-padding">
+				<h1>智慧重汽</h1>
+				
+				<div class="top-shopping">
+					<a href="#">
+						购物车
+						<b>0</b>
+					</a>
+					
+				</div>
+				<div class="top-search">
+					<div>
+						<input type="text" placeholder="配件名称、图号">
+						<input type="button" value="搜索">
+						<div class="clear"></div>
+					</div>
+					<div class="search_link">
+						热门搜索
+							<a href="#">暖风机</a>
+							<a href="#">防冻液</a>
+							<a href="#">离合器</a>
+							<a href="#">主轴</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- 网站导航区 -->
+		<div class="b-bar">
+		<div class="wrap-center nav-background">
+			<div class="product-nav"onmouseover="ddd('hide', 'show');"onmouseout="ddd('hide', 'hide');">
+					产品分类
+			</div>
+			 <div class="side-product">
+				 <ul style="display: none;"id="hide"onmouseover="ddd('hide', 'show');" onmouseout="ddd('hide', 'hide'); "> 
+                     <li><a href="">保养品</a></li> 
+                     <li><a href="">驾驶室类</a></li> 
+                     <li><a href="">发动机类</a></li> 
+                     <li><a href="">桥箱类</a></li> 
+                     <li><a href="">前轴及转向</a></li> 
+                     <li><a href="">电器类</a></li> 
+                     <li><a href="">底盘类</a></li> 
+                     <li><a href="">品牌商品</a></li> 
+                 </ul>
+                 </div>
+                 <div class="right_nav">
+				  <nav>
+					<ul>
+						<li><a href="index1.html">首页</a></li>
+						<li><a href="peijian.html">亲人配件</a></li>
+						<li><a href="service.html">亲人服务</a></li>
+						<li><a class="fw" href="">配件防伪</a><img class="hot" src="images/hot.png"></li>
+						<li><a href="">智能通</a></li>
+					</ul>
+				</nav>  
+				<div class="app-link">
+					<a href="#">
+					<img src="images/app.png">
+					APP下载
+					</a>
+				</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+</header>
+<div id="content">
+	<div class="aim">您的位置：首页>配件防伪</div>
+	<div id="main">
+	    <h1>配件防伪</h1>
+	    <hr/>
+	    <div class="wrong">
+	    	<div class="fenlei">
+	    		<table cellpadding="0" cellspacing="0" border="0" width="100%"> 
+                  <tbody>
+                     <tr> 
+                       <td width="19%" align="right">物料分类：</td> 
+                        <td colspan="2"> 
+                          <div class="fcwx_tablist"> 
+                            <a href="" ref="part" class="cur">配件</a> 
+                           <a href="" ref="oil">油品</a> 
+                          </div> 
+                         </td> 
+                      </tr> 
+                    </tbody>
+                 </table>
+                 <div style="clear: both;"></div>
+                 <form>
+                 <div class="form" style="margin-left: 95px;margin-top: 20px">
+                 	<label>配件条码：</label><input class="input" type="text"placeholder="请输入您配件上的条码（12或22位）">&nbsp;<a href="">在哪找?</a><br/><br/>
+                 	<label>包装箱号：</label><input class="input" type="text"placeholder="请输入包装箱上的包装箱号（12位）">&nbsp;<a href="">在哪找?</a><br/><br/>
+                 	<label>&nbsp;&nbsp;&nbsp;&nbsp;验证码：</label><input class="yanzheng" type="text"placeholder="请输入验证码"><br/><br/>
+                 	</div>
+                 	<input class="button" type="button"value="查询">
+                 </form>
+                 <div class="zhu">
+                 	<p>注：</p>
+                 	<p>1、目前仅支持在本平台购买的产品的真伪验证；</p>
+                 	<p>2、2016年7月1日前，暂不支持线下购买产品的真伪验证。</p>
+                 </div>
+	    	</div>
+	    	<div style="clear: both;"></div>
+	    </div>
+	</div>
+</div>
+<div style="clear: both;"></div>
+<footer id="footer">
+		<div class="foot-top">
+			<div class="wrap-center">
+				<ul>
+	                <li>
+	                    <span class="img fic0_1"></span>
+	                    <span class="text">官方正品 放心选购</span>
+	                </li>
+	                <li>
+	                    <span class="img fic0_2"></span>
+	                    <span class="text">价格透明 用心服务</span>
+	                </li>
+	                <li>
+	                    <span class="img fic0_3"></span>
+	                    <span class="text">急速物流 及时送达</span>
+	                </li>
+	                <li>
+	                    <span class="img fic0_4"></span>
+	                    <span class="text">智能搜索 准确适配</span>
+	                </li>
+            	</ul>
+			</div>
+		</div>
+		<div class="foot-center">
+			<div class="wrap-center">
+				<div class="foot-left">
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">新手入门</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">如何注册</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">购物流程</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">报修流程</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">常见问题</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">特色服务</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">手机APP</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">一键报修</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">配件防伪</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">品质保障</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">支付配送</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="/#" target="_blank">在线支付</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">发票说明</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">配送服务</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">运费说明</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">售后服务</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">售后政策</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">售后质保期</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">退货说明</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">报修服务</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">关于我们</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">关于智慧重汽</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">联系我们</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">在线客服</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">法律声明</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">退款说明</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">法律声明</a>
+	                    </dd>
+	                </dl>
+            	</div>
+	            <figure class="foot-right">
+	            		<img src="images/app-link.jpg">
+	            		<figcaption>APP下载</figcaption>
+	            </figure>
+	            <div class="foot-link">
+	             	<div class="yy_title">7×24小时客服服务</div>
+	            	<div class="foth_tel">4001-888-666</div>
+	            </div> 
+	            <div class="clear"></div>
+			</div>
+		</div>
+		<div class="foot-bottom">
+			<div class="wrap-center">
+				<a href="#">©中国重型汽车集团有限公司</a>
+        	 	版权所有 智慧重汽相关备案信息
+			</div>
+		</div>
+	</footer>
+	<div class="fixed-right">
+		<ul>
+			<li class="gw">
+				<a href=""><i></i><span>购物车</span></a>
+			</li>
+			<li class="bx">
+				<a href=""><i></i><span>一键<br/>报修</span></a>
+			</li>
+			<li class="ss">
+				<a href=""><i></i><span>预约<br/>服务</span></a>
+			</li>
+			<li class="yj">
+				<a href=""><i></i><span>意见<br/>反馈</span></a>
+			</li>
+			<li class="kh">
+				<a href=""><i></i><span>客服</span></a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

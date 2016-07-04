@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>亲人服务</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/service.css">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=05c522e5a6638d8bd83c5d83344cbb15"></script>
+	<script> 
+          function ddd(obj, sType) { 
+              var oDiv = document.getElementById(obj); 
+              if (sType == 'show') { oDiv.style.display = 'block';} 
+                  if (sType == 'hide') { oDiv.style.display = 'none';} 
+
+            } 
+</script> 
+</head>
+<body>
+<header id="header">
+		<div class="top-bar">
+			<div class="wrap-center">
+				<div class="top-welcome">
+					您好，欢迎来到智慧重汽！
+					<a href="##" class="top-login-link">[登录]</a>
+					<a href="##" class="top-reg-link">注册</a>
+				</div>
+				<div class="top-user-nav">
+					<ul>
+						<li><a href="#">
+							智慧重汽首页
+							</a>
+						</li>
+						<li class="nav-split">|</li>
+						<li><a href="#">我的订单</a></li>
+						<li class="nav-split">|</li>
+						<li><a href="#">我的车辆</a></li>
+						<li class="nav-split">|</li>
+						<li><a href="#">我的收藏</a></li>
+						<li class="nav-split">|</li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- logo+search -->
+		<div class="m-bar">
+			<div class="wrap-center m-bar-padding">
+				<h1>智慧重汽</h1>
+				
+				<div class="top-shopping">
+					<a href="#">
+						购物车
+						<b>0</b>
+					</a>
+					
+				</div>
+				<div class="top-search">
+					<div>
+						<input type="text" placeholder="配件名称、图号">
+						<input type="button" value="搜索">
+						<div class="clear"></div>
+					</div>
+					<div class="search_link">
+						热门搜索
+							<a href="#">暖风机</a>
+							<a href="#">防冻液</a>
+							<a href="#">离合器</a>
+							<a href="#">主轴</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- 网站导航区 -->
+		<div class="b-bar">
+		<div class="wrap-center nav-background">
+			<div class="product-nav"onmouseover="ddd('hide', 'show');"onmouseout="ddd('hide', 'hide');">
+					产品分类
+			</div>
+			 <div class="side-product">
+				 <ul style="display: none;"id="hide"onmouseover="ddd('hide', 'show');" onmouseout="ddd('hide', 'hide'); "> 
+                     <li><a href="">保养品</a></li> 
+                     <li><a href="">驾驶室类</a></li> 
+                     <li><a href="">发动机类</a></li> 
+                     <li><a href="">桥箱类</a></li> 
+                     <li><a href="">前轴及转向</a></li> 
+                     <li><a href="">电器类</a></li> 
+                     <li><a href="">底盘类</a></li> 
+                     <li><a href="">品牌商品</a></li> 
+                 </ul>
+                 </div>
+                 <div class="right_nav">
+				  <nav>
+					<ul>
+						<li><a href="index1.html">首页</a></li>
+						<li><a href="peijian.html">亲人配件</a></li>
+						<li><a href="service.html">亲人服务</a></li>
+						<li><a class="fw" href="fangwei.html">配件防伪</a><img class="hot" src="images/hot.png"></li>
+						<li><a href="zhinengtong.html">智能通</a></li>
+					</ul>
+				</nav>  
+				<div class="app-link">
+					<a href="#">
+					<img src="images/app.png">
+					APP下载
+					</a>
+				</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+</header>
+<div id="content">
+	<div class="aim">您的位置：首页>亲人服务</div>
+	<div id="main">
+		<div id="left">
+			<div class="_fuwu fix">
+				<a href="" class="y">一键报修</a>
+				<a href="" class="w">服务预约</a>
+			</div>
+		<div class="wufur_radio fix"> 
+            <span><input type="radio" checked="true" value="" name="fw" id="all"><label for="all">全部</label></span> 
+           <span><input type="radio" name="fw" value="S" id="s_s"><label for="s_s">商用车</label></span> 
+           <span><input type="radio" name="fw" value="K" id="k_k"><label for="k_k">卡车</label></span> 
+           </div>
+          <!--  <div style="clear: both;"></div> -->
+      <div class="fuwur_select fix"> 
+            <select class="fw_cityse l"> 
+            <option value="">请选择省份</option>
+             <option value="36791">安徽</option>
+             <option value="2912">北京</option>
+             <option value="2">福建</option>
+             <option value="18483">广东</option>
+             <option value="20239">广西</option>
+             <option value="21895">甘肃</option>
+             <option value="23367">贵州</option>
+             <option value="3252">河北</option>
+             <option value="5701">黑龙江</option>
+             <option value="21613">海南</option>
+             <option value="38495">河南</option>
+             <option value="41140">湖北</option>
+             <option value="42631">湖南</option>
+             <option value="1215">江西</option>
+             <option value="7451">吉林</option>
+             <option value="15122">江苏</option>
+             <option value="8453">辽宁</option>
+             <option value="10089">内蒙古</option>
+             <option value="25022">宁夏</option>
+             <option value="25303">青海</option>
+             <option value="11242" selected="">山东</option>
+             <option value="13290">山西</option>
+             <option value="16625">上海</option>
+             <option value="25759">陕西</option>
+             <option value="27302">四川</option>
+             <option value="14849">天津</option>
+             <option value="32164">西藏</option>
+             <option value="32937">新疆</option>
+             <option value="34185">云南</option>
+             <option value="16861">浙江</option>
+             <option value="35712">重庆</option>
+             </select> 
+             <select class="fw_prise r"> 
+                 <option value="">请选择城市</option>
+                  <option value="12088">滨州</option>
+                  <option value="11680">德州</option>
+                  <option value="12187">东营</option>
+                  <option value="11243">菏泽</option>
+                  <option value="11421">济南</option>
+                  <option value="11826">济宁</option>
+                  <option value="12235">莱芜</option>
+                  <option value="12258">聊城</option>
+                  <option value="12585">临沂</option>
+                  <option value="12402">青岛</option>
+                  <option value="12849">日照</option>
+                  <option value="11995">泰安</option>
+                  <option value="13079">潍坊</option>
+                  <option value="13211">威海</option>
+                  <option value="12910" selected="">烟台</option>
+                  <option value="11561">淄博</option>
+                  <option value="12778">枣庄</option>
+          </select> 
+      </div>
+        <div class="local fix">
+        	<div class="city">你目前所在城市：山东烟台</div>
+        	<div class="serve">共有9家服务站</div>
+        </div>
+        <div class="tab-service">
+						<ul class="fix">
+							<li>
+								<dl>
+									<dt  class="title">
+									<a href=""> 中国重汽烟台集大特约服务站</a></dt>
+									<dd class="address">详细地址：烟台市芝罘区冰轮路45号</dd>
+									<dd>所在区域：山东烟台 </dd>
+									<dd>联系电话：0535-6857959</dd>
+									<dd>主修业务：卡车</dd>
+									<dd>主修业务：卡车</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt  class="title">
+									<a href=""> 中国重汽烟台集大特约服务站</a></dt>
+									<dd class="address">详细地址：烟台市芝罘区冰轮路45号</dd>
+									<dd>所在区域：山东烟台 </dd>
+									<dd>联系电话：0535-6857959</dd>
+									<dd>主修业务：卡车</dd>
+									<dd>主修业务：卡车</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt  class="title">
+									<a href=""> 中国重汽烟台集大特约服务站</a></dt>
+									<dd class="address">详细地址：烟台市芝罘区冰轮路45号</dd>
+									<dd>所在区域：山东烟台 </dd>
+									<dd>联系电话：0535-6857959</dd>
+									<dd>主修业务：卡车</dd>
+									<dd>主修业务：卡车</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt  class="title">
+									<a href=""> 中国重汽烟台集大特约服务站</a></dt>
+									<dd class="address">详细地址：烟台市芝罘区冰轮路45号</dd>
+									<dd>所在区域：山东烟台 </dd>
+									<dd>联系电话：0535-6857959</dd>
+									<dd>主修业务：卡车</dd>
+									<dd>主修业务：卡车</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt  class="title">
+									<a href=""> 中国重汽烟台集大特约服务站</a></dt>
+									<dd class="address">详细地址：烟台市芝罘区冰轮路45号</dd>
+									<dd>所在区域：山东烟台 </dd>
+									<dd>联系电话：0535-6857959</dd>
+									<dd>主修业务：卡车</dd>
+									<dd>主修业务：卡车</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt  class="title">
+									<a href=""> 中国重汽烟台集大特约服务站</a></dt>
+									<dd class="address">详细地址：烟台市芝罘区冰轮路45号</dd>
+									<dd>所在区域：山东烟台 </dd>
+									<dd>联系电话：0535-6857959</dd>
+									<dd>主修业务：卡车</dd>
+									<dd>主修业务：卡车</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+		</div>
+		<div id="right">
+			<div class="top"><img src="images/20151103222836_936.jpg"></div>
+			 <div id="allmap"></div>
+		</div>
+	</div>
+</div>
+<div style="clear: both;"></div>
+<footer id="footer">
+		<div class="foot-top">
+			<div class="wrap-center">
+				<ul>
+	                <li>
+	                    <span class="img fic0_1"></span>
+	                    <span class="text">官方正品 放心选购</span>
+	                </li>
+	                <li>
+	                    <span class="img fic0_2"></span>
+	                    <span class="text">价格透明 用心服务</span>
+	                </li>
+	                <li>
+	                    <span class="img fic0_3"></span>
+	                    <span class="text">急速物流 及时送达</span>
+	                </li>
+	                <li>
+	                    <span class="img fic0_4"></span>
+	                    <span class="text">智能搜索 准确适配</span>
+	                </li>
+            	</ul>
+			</div>
+		</div>
+		<div class="foot-center">
+			<div class="wrap-center">
+				<div class="foot-left">
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">新手入门</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">如何注册</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">购物流程</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">报修流程</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">常见问题</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">特色服务</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">手机APP</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">一键报修</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">配件防伪</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">品质保障</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">支付配送</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="/#" target="_blank">在线支付</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">发票说明</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">配送服务</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">运费说明</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">售后服务</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">售后政策</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">售后质保期</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">退货说明</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">报修服务</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">关于我们</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">关于智慧重汽</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">联系我们</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">在线客服</a>
+	                    </dd>
+	                </dl>
+	                <dl>
+	                    <dt>
+	                        <a href="#" target="_blank">法律声明</a>
+	                    </dt>
+	                    <dd>
+	                        <a href="#" target="_blank">退款说明</a>
+	                    </dd>
+	                    <dd>
+	                        <a href="#" target="_blank">法律声明</a>
+	                    </dd>
+	                </dl>
+            	</div>
+	            <figure class="foot-right">
+	            		<img src="images/app-link.jpg">
+	            		<figcaption>APP下载</figcaption>
+	            </figure>
+	            <div class="foot-link">
+	             	<div class="yy_title">7×24小时客服服务</div>
+	            	<div class="foth_tel">4001-888-666</div>
+	            </div> 
+	            <div class="clear"></div>
+			</div>
+		</div>
+		<div class="foot-bottom">
+			<div class="wrap-center">
+				<a href="#">©中国重型汽车集团有限公司</a>
+        	 	版权所有 智慧重汽相关备案信息
+			</div>
+		</div>
+	</footer>
+	<div class="fixed-right">
+		<ul>
+			<li class="gw">
+				<a href=""><i></i><span>购物车</span></a>
+			</li>
+			<li class="bx">
+				<a href=""><i></i><span>一键<br/>报修</span></a>
+			</li>
+			<li class="ss">
+				<a href=""><i></i><span>预约<br/>服务</span></a>
+			</li>
+			<li class="yj">
+				<a href=""><i></i><span>意见<br/>反馈</span></a>
+			</li>
+			<li class="kh">
+				<a href=""><i></i><span>客服</span></a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+	// 创建地址解析器实例
+	var myGeo = new BMap.Geocoder();
+	// 将地址解析结果显示在地图上,并调整地图视野
+	myGeo.getPoint("烟台市迎春大街", function(point){
+		if (point) {
+			map.centerAndZoom(point, 16);
+			map.addOverlay(new BMap.Marker(point));
+		}else{
+			alert("您选择地址没有解析到结果!");
+		}
+	}, "烟台市");
+	</script>
+</body>
+</html>
